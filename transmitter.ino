@@ -17,7 +17,7 @@
 #define CSN_PIN 40
 
 // Create the display object
-Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCK, TFT_RST, TFT_MISO);
+Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
 RF24 radio(CE_PIN, CSN_PIN);
 
 const byte address[6] = "00001"; // Communication channel
